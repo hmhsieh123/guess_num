@@ -5,8 +5,12 @@
 
 
 import random
+start = input('請決定隨機數字範圍開始值： ')
+end = input('請決定隨機數字範圍結束值: ')
+start = int(start)
+end = int(end)
 
-r = random.randint(1, 100)
+r = random.randint(start, end)
 count = 0 
 while True:# 先寫一個無限循迴，當使用者猜對後，再用break離開
     count += 1 # count = count +1
